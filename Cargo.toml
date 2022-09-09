@@ -1,0 +1,13 @@
+[package]
+name = "rust_wasm32_unknown_unknown_binary"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wee_alloc = { version = "*" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
